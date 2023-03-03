@@ -1,0 +1,37 @@
+.item1 {
+    grid-area: myArea;
+    height: 100px;
+  
+  }
+  
+  .grid-container .item1:hover{
+    cursor: text;
+    user-select: text;
+  }
+  
+  .grid-container {
+    max-width: 500px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea myArea';
+    grid-gap: 10px;
+    background-color: #66ccff;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    color: black;
+    background-color: white ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    user-select:none;
+  }
+  
+  .grid-container > div:hover{
+    /*border: 1px inset grey;*/
+    background-color:  rgba(255,255,255,.8);
+    cursor: pointer;
+  }
+  
